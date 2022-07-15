@@ -1,0 +1,60 @@
+﻿body {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+table, tr, td {
+    padding: 8px;
+}
+
+label, input, select {
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+.lblHead {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+select {
+    width: 210px;
+}
+
+span {
+    color: red;
+    visibility: hidden;
+}
+
+.spanImg {
+    visibility: visible;
+    font-size: 12px;
+}
+
+.d1 {
+    display: inline-block;
+    border: 1px double lightgray;
+    padding: 10px;
+    padding-left: 30px;
+    box-shadow: 10px 10px 15px gray;
+}
+
+.btn {
+    width: 80px;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#BtnSave {
+    background-color: darkgreen;
+    color: white;
+    margin-right: 10px;
+}
+
+#BtnReset {
+    background-color: red;
+    margin-left: 10px;
+}

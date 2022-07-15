@@ -1,0 +1,40 @@
+﻿.container {
+    margin: auto;
+    min-width: 70%;
+    min-height: 80%;
+    width: 90%;
+    height: auto;
+    /*background-color:#5ba985;*/
+    border: 1px solid;
+}
+
+.logo {
+    width: 100%;
+    height: 150px;
+    /*background-color:#b6ff00;*/
+}
+
+.sideBar {
+    width: 20%;
+    min-height: 490px;
+    height: auto;
+    /*background-color:#ff6a00;*/
+    float: left;
+    /*border-right:1px solid;*/
+}
+
+.content {
+    width: 80%;
+    min-height: 500px;
+    height: auto;
+    /*background-color:#4d74db;*/
+    float: right;
+}
+
+.footer {
+    width: 100%;
+    height: 49px;
+    /*border-top: 1px solid;*/
+    background-color: #808080;
+    float: left;
+}

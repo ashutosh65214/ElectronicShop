@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ElectronicShop.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/Css/Common.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+           <div class="container">
+            <div class="logo">
+                
+                <asp:Image ID="ImgLogo" CssClass="logo" ImageUrl="~/Content/Image/791.jpg" runat="server" />
+            </div>
+            <div class="sideBar">
+                <asp:LinkButton Text="Add New Product" ID="BtnAddNew" PostBackUrl="~/AddNewProduct.aspx" runat="server" />
+                <br />
+                 <asp:TreeView ID="TreeView1" runat="server">
+                <Nodes>
+                    <asp:TreeNode Text="Home" Value="Home" NavigateUrl="~/Home.aspx">
+                        <asp:TreeNode Text="Electronics" Value="Electronics">
+                            <asp:TreeNode NavigateUrl="~/Television.aspx" Text="Television" Value="Television"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Mobile.aspx" Text="MobilePhone" Value="MobilePhone"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/SmartWatch.aspx" Text="Smart Watch" Value="Smart Watch"></asp:TreeNode>
+                             <asp:TreeNode NavigateUrl="~/Monitor.aspx" Text="Monitor" Value="Smart Watch"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Home &amp; Office" Value="Home &amp; Office">
+                            <asp:TreeNode NavigateUrl="~/Pen.aspx" Text="Pen" Value="Pen"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Fan.aspx" Text="Fan" Value="Fan"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                </Nodes>
+            </asp:TreeView>
+                
+            </div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </form>
+</body>
+</html>
